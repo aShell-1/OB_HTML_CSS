@@ -1,0 +1,26 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #aaaaaa;
+    cursor: pointer;
+}
+
+button::before {
+    content: 'Pasa por encima';
+}
+
+button:hover {
+    background-color: rgb(69, 139, 0);
+    color: white;
+}
+
+button:hover::before {
+    content: '¡Hecho!';
+}
